@@ -2,7 +2,7 @@
 
 const CompanionsLibrary = () => {
     return (
-        <div>CompanionsLibrary</div>
+        <div>Companions</div>
     )
 }
 export default CompanionsLibrary

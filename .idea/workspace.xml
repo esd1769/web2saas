@@ -5,42 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa5cea4b-2342-4d15-a989-6a93dde66973" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/companions/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sign-in/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/soundwaves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/bookmark-filled.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/bookmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/cap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/coding.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/economics.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/history.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/language.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/maths.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/mic-off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/mic-on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/science.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/limit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/readme/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/readme/jsmpro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/readme/thumbnail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/readme/videokit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/vapi.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/companions/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/companions/new/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-journey/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/subscription/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NavItems.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/companions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/companions/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="31EO0uHrIB0WSgFxiC1PwX5mCn2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -63,18 +36,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
     "last_opened_file_path": "D:/web2saas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
     "ts.external.directory.path": "D:\\web2saas\\node_modules\\typescript\\lib",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,6 +61,21 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\web2saas" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -97,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755085545693</updated>
-      <workItem from="1755085546782" duration="2512000" />
+      <workItem from="1755085546782" duration="6807000" />
+      <workItem from="1755099688920" duration="3222000" />
     </task>
     <servers />
   </component>
