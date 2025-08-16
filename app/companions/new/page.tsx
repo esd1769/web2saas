@@ -1,8 +1,16 @@
-import React from 'react'//no ned for nextjs projects as it does automatically
+import React from 'react'
+import CompanionForm from "@/app/companions/CompanionForm";
+//no ned for nextjs projects as it does automatically
 
 const NewCompanion = () => {
     return (
-        <div>NewCompanion</div>
+        <main className="min-lg:w-1/3 min-md:w-2/3
+        items-center justify-center">
+            <article className="w-full gap-4 flex flex-col ">
+                <h1>Companion Builder</h1>
+                <CompanionForm />
+            </article>
+        </main>
     )
 }
 export default NewCompanion
