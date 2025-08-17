@@ -21,6 +21,8 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { subjects } from "@/constants"
+
 
 const formSchema = z.object({
     name: z.string().min(1,{message: "Companion is required"}),
@@ -84,13 +86,22 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                                     defaultValue={field.value}
 
                                 >
-                                    <SelectTrigger className="w-[180px]">
-                                        <SelectValue placeholder="Theme" />
+                                    <SelectTrigger className="input capitalize">
+                                        <SelectValue placeholder="Select the subject" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="light">Light</SelectItem>
-                                        <SelectItem value="dark">Dark</SelectItem>
-                                        <SelectItem value="system">System</SelectItem>
+                                        {subjects.map((subject)=>(
+                                            <SelectItem
+                                                value={subject}
+                                            key={subject}
+                                            className="capitalize"
+                                                >
+                                                {subject}
+                                            </SelectItem>
+
+
+                                        
+                                        ))}
                                     </SelectContent>
                                 </Select>
                             </FormControl>
@@ -100,13 +111,13 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                 />
                 <FormField
                     control={form.control}
-                    name="name"
+                    name="topic"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Companion name</FormLabel>
+                            <FormLabel>What should the companion help with?</FormLabel>
                             <FormControl>
-                                <Input placeholder=
-                                           "Enter the companion name"
+                                <textarea placeholder=
+                                           "Ex. Derivatives & Integrals"
                                        {...field} className="input" />
                             </FormControl>
                             <FormMessage />
@@ -115,14 +126,26 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                 />
                 <FormField
                     control={form.control}
-                    name="name"
+                    name="voice"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Companion name</FormLabel>
+                            <FormLabel>Voice</FormLabel>
                             <FormControl>
-                                <Input placeholder=
-                                           "Enter the companion name"
-                                       {...field} className="input" />
+                                <Select
+                                    onValueChange={field.onChange}
+                                    value={field.value}
+                                    defaultValue={field.value}
+
+                                >
+                                    <SelectTrigger className="input">
+                                        <SelectValue placeholder="Select the voice" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+
+                                        <SelectItem value="male">Male</SelectItem>
+                                        <SelectItem value="female">Female</SelectItem>
+                                    </SelectContent>
+                                </Select>
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -130,14 +153,26 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                 />
                 <FormField
                     control={form.control}
-                    name="name"
+                    name="style"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Companion name</FormLabel>
+                            <FormLabel>Style</FormLabel>
                             <FormControl>
-                                <Input placeholder=
-                                           "Enter the companion name"
-                                       {...field} className="input" />
+                                <Select
+                                    onValueChange={field.onChange}
+                                    value={field.value}
+                                    defaultValue={field.value}
+
+                                >
+                                    <SelectTrigger className="input">
+                                        <SelectValue placeholder="Select the style" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+
+                                        <SelectItem value="formal">Formal</SelectItem>
+                                        <SelectItem value="casual">Casual</SelectItem>
+                                    </SelectContent>
+                                </Select>
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -145,13 +180,17 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                 />
                 <FormField
                     control={form.control}
-                    name="name"
+                    name="duration"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Companion name</FormLabel>
+                            <FormLabel>Estimated session duration in minutes
+                            </FormLabel>
                             <FormControl>
-                                <Input placeholder=
-                                           "Enter the companion name"
+                                <Input
+                                    type="number"
+
+                                    placeholder=
+                                           "15"
                                        {...field} className="input" />
                             </FormControl>
                             <FormMessage />
@@ -159,9 +198,12 @@ const onSubmit=(values: z.infer<typeof formSchema>)=>
                     )}
                 />
 
-                <Button type="submit">Submit</Button>
+                <Button type="submit" className="w-full cursor-pointer ">
+                    Build Your Companion
+                </Button>
             </form>
         </Form>
+
     )
 }
 export default CompanionForm
