@@ -28,7 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+      <ClerkProvider
+          appearance={{
+            variables: {
+              colorPrimary: "#FE5933",
+              colorBackground: "#FFFFFF",
+            },
+          }}
+      >
       <html lang="en">
         <body className={`${bricolage.variable} antialiased`}>
 
