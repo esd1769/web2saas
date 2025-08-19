@@ -1,8 +1,12 @@
 import React from 'react'
 import CompanionForm from "@/app/companions/CompanionForm";
+import {auth} from "@clerk/nextjs/server";
+import {redirect} from "next/navigation";
 //no ned for nextjs projects as it does automatically
 
-const NewCompanion = () => {
+const NewCompanion = async() => {
+    const {userId}=await auth();
+    if (!userId) redirect(`/sign-in`);
     return (
         <main className="min-lg:w-1/3 min-md:w-2/3
         items-center justify-center">
