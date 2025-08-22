@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fa5cea4b-2342-4d15-a989-6a93dde66973" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/companions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/companions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/companions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/companions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SubjectFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SubjectFilter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions/companion.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/companion.actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -118,7 +115,8 @@
       <workItem from="1755708491024" duration="1060000" />
       <workItem from="1755710884053" duration="4930000" />
       <workItem from="1755716621311" duration="706000" />
-      <workItem from="1755797862177" duration="757000" />
+      <workItem from="1755797862177" duration="1642000" />
+      <workItem from="1755840283874" duration="95000" />
     </task>
     <servers />
   </component>
