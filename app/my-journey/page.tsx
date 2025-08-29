@@ -66,7 +66,7 @@ const Profile = async() => {
                     <AccordionItem value="recent">
                         <AccordionTrigger className='text-2xl font-bold'>Recent Sessions</AccordionTrigger>
                         <AccordionContent>
-                           <CompanionsList title='recent Sessions'
+                           <CompanionsList title='Recent Sessions'
                             companions={sessionHistory}/>
                         </AccordionContent>
                     </AccordionItem>
