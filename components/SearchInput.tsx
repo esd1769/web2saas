@@ -4,6 +4,7 @@ import Image from "next/image"
 
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 import {formUrlQuery, removeKeysFromUrlQuery} from "@jsmastery/utils";
+import {Input} from "@/components/ui/input";
 
 const SearchInput = () => {
     const pathname=usePathname();
@@ -39,17 +40,16 @@ const SearchInput = () => {
 
     },[searchQuery, pathname,router,searchParams]);
     return (
-        <div className=" relative border border-black rounded-lg items-center
-        flex gap-2 px-2 py-1 h-fit">
+        <div className="flex gap-2 items-center w-full">
             <Image src="/icons/search.svg" alt="search icon"
                    width={15} height={15}/>
-            <input
+
+            <Input
+                type="text"
                 placeholder="Search by Companions..."
-                className="outline-none "
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-
-
+                className="border border-black rounded-lg px-3 py-2"
             />
 
 
