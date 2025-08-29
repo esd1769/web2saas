@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {Button} from "@/components/ui/button";
 import CompanionCard from "@/app/companions/CompanionCard";
@@ -6,8 +7,13 @@ import CompanionsList from "@/app/companions/CompanionsList";
 import {recentSessions} from "@/constants";
 import {getAllCompanions, getRecentSessions} from "@/lib/actions/companion.actions";
 import {getSubjectColor} from "@/lib/utils";
+import {revalidatePath} from "next/cache";
+
+
+
 
 const Page =async () => {
+
     const companions=await getAllCompanions({limit:3});
     const recentSessionsCompanions=await getRecentSessions(10);
   return (
@@ -32,8 +38,10 @@ const Page =async () => {
             <CompanionsList
                 title= "Recently completed sessions"
                 companions={recentSessionsCompanions}
+
                 classNames= "w-2/3 max-lg:w-full"
             />
+
 
             <CTA/>
 
