@@ -119,8 +119,13 @@ const CompanionComponent =
                                 callStatus === CallStatus.CONNECTING && 'opacity-100 animate-pulse',
                                 )
                         }>
-                            <Image src={`/icons/${subject}.svg`} alt={subject}
-                                   width={150} height={150} className='max-sm:w-fit'/>
+                            <div
+                                className="flex items-center justify-center rounded-full w-[150px] h-[150px] text-white font-bold max-sm:w-[100px] max-sm:h-[100px] text-5xl max-sm:text-3xl"
+                                style={{ backgroundColor: getSubjectColor(subject) }}
+                            >
+                                {subject[0]?.toUpperCase()}
+                            </div>
+
 
                         </div>
                         <div
