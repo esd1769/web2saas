@@ -6,9 +6,21 @@ import {CreateAssistantDTO} from "@vapi-ai/web/api";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+export const vibrantHues = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
+
 export const getSubjectColor = (subject: string) => {
-  return subjectsColors[subject as keyof typeof subjectsColors];
+  if (!subject) return "#FF69B4"; // fallback bright pink
+
+  let hash = 0;
+  for (let i = 0; i < subject.length; i++) {
+    hash = subject.charCodeAt(i) + ((hash << 5) - hash);
+  }
+
+  const hue = vibrantHues[Math.abs(hash) % vibrantHues.length];
+  return `hsl(${hue}, 80%, 50%)`;
 };
+
+
 
 
 export const configureAssistant = (voice: string, style: string) => {

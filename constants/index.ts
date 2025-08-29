@@ -15,6 +15,23 @@ export const subjectsColors = {
   history: "#FFECC8",
   economics: "#C8FFDF",
 };
+export const vibrantHues = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
+
+export const getSubjectColor = (subject: string) => {
+  if (!subject) return "#FF69B4"; // fallback bright pink
+
+  // hash subject string
+  let hash = 0;
+  for (let i = 0; i < subject.length; i++) {
+    hash = subject.charCodeAt(i) + ((hash << 5) - hash);
+  }
+
+  // pick hue from vibrantHues
+  const hue = vibrantHues[Math.abs(hash) % vibrantHues.length];
+
+  return `hsl(${hue}, 80%, 50%)`; // bright & vivid
+};
+
 
 export const voices = {
   male: { casual: "2BJW5coyhAzSr8STdHbE", formal: "c6SfcYrb2t09NHXiT80T" },

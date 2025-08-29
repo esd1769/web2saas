@@ -90,30 +90,14 @@ const onSubmit=async(values: z.infer<typeof formSchema>)=>
                         <FormItem>
                             <FormLabel>Subject</FormLabel>
                             <FormControl>
-                                <Select
-                                    onValueChange={field.onChange}
-                                    value={field.value}
-                                    defaultValue={field.value}
+                                <FormControl>
+                                    <Input
+                                        placeholder="Enter the subject"
+                                        {...field}
+                                        className="input"
+                                    />
+                                </FormControl>
 
-                                >
-                                    <SelectTrigger className="input capitalize">
-                                        <SelectValue placeholder="Select the subject" />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                        {subjects.map((subject)=>(
-                                            <SelectItem
-                                                value={subject}
-                                            key={subject}
-                                            className="capitalize"
-                                                >
-                                                {subject}
-                                            </SelectItem>
-
-
-                                        
-                                        ))}
-                                    </SelectContent>
-                                </Select>
                             </FormControl>
                             <FormMessage />
                         </FormItem>

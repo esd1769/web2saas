@@ -41,15 +41,21 @@ const CompanionsList = ({title,companions,classNames}:companionsListprops) => {
                                         <div className="size-[72px] flex items-center
                                         justify-center rounded-lg max-md:hidden"
                                         style={{backgroundColor:getSubjectColor(subject)}}>
-                                            <Image src={`/icons/${subject}.svg`}
-                                                   alt={subject}
-                                                   width={35}
-                                                   height={35}
-                                            />
+                                            {/*//image with first letter of subject*/}
+                                            <div
+                                                className="flex items-center justify-center rounded-full w-[72px] h-[72px] text-white font-extrabold text-5xl border-2 border-black"
+                                                style={{ backgroundColor: getSubjectColor(subject) }}
+                                            >
+                                                {subject[0]?.toUpperCase()}
+                                            </div>
+
+
 
                                         </div>
                                         <div className="flex flex-col gap-2">
-                                            <p className="font-bold text-2xl">{subject}
+                                            <p className="font-bold text-2xl">
+                                                {subject}
+                                                {" "}
                                                 {name}
                                             </p>
                                             <p className="text-lg">
@@ -71,11 +77,14 @@ const CompanionsList = ({title,companions,classNames}:companionsListprops) => {
                                 <div className="flex items-center justify-center
                                 rounded-lg w-fit p-2 md:hidden"
                                      style={{backgroundColor:getSubjectColor(subject)}}>
-                                            <Image src={`/icons/${subject}.svg`}
-                                                   alt={subject}
-                                                   width={18}
-                                                   height={18}
-                                            />
+                                    {/*//image with first letter of subject*/}
+                                    <div
+                                        className="flex items-center justify-center rounded-full w-[72px] h-[72px] text-white font-extrabold text-5xl border-2 border-black"
+                                        style={{ backgroundColor: getSubjectColor(subject) }}
+                                    >
+                                        {subject[0]?.toUpperCase()}
+                                    </div>
+
 
                                 </div>
 
